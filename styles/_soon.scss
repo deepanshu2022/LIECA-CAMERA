@@ -1,0 +1,52 @@
+.soon {
+  background: radial-gradient(#525252, #131313);
+}
+
+.soon-content {
+  position: relative;
+  min-height: 90vh;
+  z-index: 0;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  // justify-content: center;
+}
+
+.camera,
+.circle,
+.soon-content h1 {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-55%, -50%);
+}
+
+.soon-content h1 {
+  z-index: 2;
+  top: 15%;
+}
+
+.camera {
+  z-index: 1;
+}
+
+footer {
+  background-color: #131313;
+  padding: 4rem 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-content p {
+  font-size: 1.8rem;
+}
+
+.logos ul {
+  display: flex;
+  list-style: none;
+  gap: 10rem;
+}

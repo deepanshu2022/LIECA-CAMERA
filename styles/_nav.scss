@@ -1,0 +1,58 @@
+.section-nav {
+  background-color: rgb(18, 18, 18);
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+nav {
+  min-height: 10vh;
+  padding: 3rem 0rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  font-family: "Lobster", cursive;
+  font-weight: lighter;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6rem;
+    height: 6rem;
+    background-color: #f54538;
+    border-radius: 50%;
+    transform: translate(-10%, -20%);
+    mix-blend-mode: screen;
+  }
+}
+
+.nav-links {
+  justify-self: right;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 8rem;
+}
+
+nav ul li a:hover {
+  color: #f54538;
+}
+
+.order {
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  background-color: #f54538;
+}
+
+.order:hover {
+  color: #fff;
+  background-color: rgb(200, 0, 0);
+}
